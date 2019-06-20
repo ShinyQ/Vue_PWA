@@ -14,7 +14,7 @@ const Home = {
   },
   actions: {
     getNews ({ state }) {
-      axios.get(`https://newsapi.org/v2/everything?q=technology&sortBy=publishedAt&apiKey=${state.data.apiKey}`)
+      axios.get(`https://newsapi.org/v2/everything?q=social&sortBy=publishedAt&apiKey=${state.data.apiKey}`)
         .then(response => {
           state.data.news = response.data.articles
         })
